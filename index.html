@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratik Pol Photography</title>
+    <meta name="description" content="Welcome to Pratik Pol Photography, a place where creativity meets professionalism, and every click tells a story.">
+    <meta name="keywords" content="photography, photographer, wedding photography, portrait photography, event photography">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome CDN for icons -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+    
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header img {
+            width: 70px;
+            height: auto;
+        }
+
+    
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+        }
+
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .gallery-item {
+            width: calc(33.33% - 20px);
+            margin-bottom: 40px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px;
+            font-size: 16px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item:hover .gallery-description {
+            opacity: 1;
+        }
+
+      
+        .about-section {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 8px;
+            margin: 40px auto;
+            max-width: 800px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .about-section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .about-section p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #666;
+        }
+         .about-section img{
+             width: 350px;
+             border-radius: 70%;
+        }
+        .photographer-section img{
+             width: 350px;
+             border-radius: 70%;
+        }
+    
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .contact-icons {
+            margin-top: 20px;
+        }
+
+        .contact-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .contact-icons a:hover {
+            color: #ffd700;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+
+<header>
+        <img src="pc.png" alt="Logo">
+        <h1>Pratik Pol Photography</h1>
+    </header>
+
+
+    <nav>
+        <a href="#" onclick="showHome()">Home</a>
+        <a href="#" onclick="showGallery()">Gallery</a>
+        <a href="#" onclick="showAbout()">About Us</a>
+    </nav>
+
+
+    <div id="homePage">
+       
+
+ <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="photo_2024-04-11_19-58-55.jpg" alt="Photo 1">
+                <div class="gallery-description">MATERNITY SHOOT</div>
+            </div>
+            <div class="gallery-item">
+                <img src="photo_2024-04-11_19-59-28.jpg" alt="Photo 2">
+                <div class="gallery-description">WEDDING SHOOT</div>
+            </div>
+            <div class="gallery-item">
+                <img src="photo_2024-04-11_19-59-41.jpg" alt="Photo 3">
+                <div class="gallery-description">PREWEDDING SHOOT</div>
+            </div>
+        </div>
+
+
+<div class="about-section">
+            <h2>Welcome to Pratik Pol Photography</h2>
+            <p>Welcome to Pratik Pol Photography, a place where creativity meets professionalism, and every click tells a story. With a deep passion for the art of photography, we specialize in capturing life's most precious moments with authenticity, emotion, and timeless elegance.</p>
+            <p>Our journey in photography began with a simple desire – to freeze fleeting moments in time and transform them into cherished memories that last a lifetime. Over the years, we've honed our skills, developed our unique style, and cultivated a deep understanding of the power of visual storytelling.</p>
+            <p>Whether it's the joyous celebration of a wedding day, the tender bonds of a family portrait, or the excitement of a special event, we approach each project with enthusiasm, dedication, and a commitment to excellence. We believe that every moment is worth capturing, and every image should evoke emotion, inspire wonder, and stand the test of time.</p>
+            <p>At Pratik Pol Photography, we don't just take photographs – we craft experiences. From the initial consultation to the final delivery of your images, we strive to provide a personalized and professional service that exceeds your expectations. We work closely with our clients to understand their vision, capture their unique personality, and create stunning images that reflect their individuality and style.</p>
+            <p>With an eye for detail, a passion for creativity, and a dedication to perfection, we ensure that every photo we capture tells a story – your story. Our goal is not just to take pictures but to create art that speaks to the heart, captures the imagination, and preserves the beauty of life's most precious moments.</p>
+            <p>Whether you're planning a wedding, commemorating a milestone, or simply want to capture the magic of everyday life, we're here to help. Let us be your storyteller, your memory keeper, and your trusted companion on life's journey. Contact us today to schedule your session and let us turn your moments into memories that will last a lifetime.</p><br><br>
+            <h2>We Click Whatever You Want!!!</h2>
+            <p>Whatever you’re interested in, be it people, animals, nature, food, or fashion, there’s a type of photography geared around that specific subject matter. Everything under the sun, literally, is something you can photograph. And the sheer volume of options can be overwhelming. Discover your path with this list of genres open to hobbyists and professional photographers alike:</p>
+            <ul style="list-style-type: none;">
+                <li>Portrait Photoshoot </li>
+                <li>Fashion Photoshoot </li>
+                <li>Wedding Photoshoot </li>
+                <li>Event Photoshoot </li>
+                <li>Product Photoshoot </li>
+                <li>Landscape/Nature Photoshoot </li>
+                <li>Fine Art Photoshoot </li>
+                <li>Architectural/Real Estate Photoshoot </li>
+                <li>Food Photoshoot </li>
+                <li>Sports Photoshoot </li>
+                <li>Travel Photoshoot </li>
+                <li>Editorial/Documentary Photoshoot </li>
+                <li>Pet Photoshoot </li>
+                <li>Conceptual/Experimental Photoshoot</li>
+            </ul><br><br>
+          <h2>What about our Accesseries!?</h2>
+          <img src="cc.jpg"><br>
+           <p><b>Sony Alpha 7 Mark IV: Precision Redefined</b><br>
+
+The Sony Alpha 7 Mark IV is a pinnacle of digital imaging, boasting a 60+ megapixel Exmor RS CMOS sensor for unrivaled clarity. Its BIONZ XR processor ensures lightning-fast performance and exceptional low-light capabilities. With 759 phase-detection and 425 contrast-detection autofocus points, capturing fast-moving subjects is effortless. Plus, it supports 4K video recording at up to 120 fps. Intuitive controls and a high-resolution electronic viewfinder make shooting a breeze. In essence, the Alpha 7 Mark IV sets a new standard for professional photography, offering unparalleled image quality and versatility in a compact, user-friendly package.</p><br>
+         <img src="mm.jpg"><br>
+           <p><b>MacBook M2: Next-Generation Performance</b><br>
+
+The MacBook M2 revolutionizes computing with its cutting-edge M2 chip, delivering unprecedented power and efficiency. Sporting a sleek design, this laptop features a stunning Retina display with True Tone technology for vibrant, true-to-life visuals. The M2 chip, coupled with advanced neural engine technology, ensures lightning-fast performance for seamless multitasking and smooth operation of even the most demanding applications. With enhanced battery life and optimized thermal management, the MacBook M2 offers extended productivity without compromising on portability. Whether you're a creative professional, a student, or a business user, the MacBook M2 redefines what's possible in a laptop, empowering you to accomplish more, anywhere, anytime.</p>
+        </div>
+    </div>
+
+
+    <div id="galleryPage" style="display: none;">
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="a1.jpg" alt="Photo 1">
+                <div class="gallery-description">Event shoot</div>
+            </div>
+            <div class="gallery-item">
+                <img src="a2.jpg" alt="Photo 2">
+                <div class="gallery-description">Couple Shoot</div>
+            </div>
+            <div class="gallery-item">
+                <img src="a3.jpg" alt="Photo 3">
+                <div class="gallery-description">Wedding shoot</div>
+            </div>
+            <div class="gallery-item">
+                <img src="a4.jpg" alt="Photo 4">
+                <div class="gallery-description">Baby Shoot</div>
+            </div>
+            <div class="gallery-item">
+                <img src="a5.jpg" alt="Photo 5">
+                <div class="gallery-description">Fashion shoot</div>
+            </div>
+            <div class="gallery-item">
+                <img src="a6.jpg" alt="Photo 6">
+                <div class="gallery-description">Maternity Shoot</div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="aboutPage" style="display: none;">
+       
+
+ <div class="about-section">
+            <h2>About Pratik Pol Photography</h2>
+            <p>Welcome to Pratik Pol Photography, where we believe that every moment is worth capturing and preserving. Our passion for photography drives us to create timeless images that tell stories and evoke emotions.</p>
+
+
+            <div class="photographer-section"><br>
+                <h3>Meet Our Photographer: Pratik Pol</h3><br>
+                <img src="pp.jpg" alt="Pratik Pol">
+                <p>Pratik Pol is an experienced and talented photographer with a keen eye for detail and a passion for visual storytelling. With years of experience in the field, Pratik specializes in capturing life's most precious moments, from weddings and family portraits to landscapes and events.</p>
+                <p>Pratik's dedication to his craft and his commitment to excellence have earned him numerous accolades and recognition in the photography community. His unique style and artistic vision set his work apart, making every image a masterpiece.</p>
+                <p>Whether you're planning a special event or simply want to capture the beauty of everyday life, Pratik Pol Photography is here to turn your moments into memories that will last a lifetime.</p>
+                <h4>Contact Pratik Pol:</h4>
+                <p>Email: pratikpol@gmail.com</p>
+                <p>Phone: +91 8830690002</p>
+                <p>Instagram: <a href="https://www.instagram.com/pratik_pol_photography" target="_blank">@pratik_pol_photography</a></p>
+                <p>YouTube: <a href="https://www.youtube.com/@pratikpolphotoghraphy6010" target="_blank">Pratik Pol Photography</a></p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="contact-icons">
+            <a href="https://www.instagram.com/pratik_pol_photography" target="_blank"><i class="fab fa-instagram"></i></a>
+               <a href="https://www.youtube.com/@pratikpolphotoghraphy6010" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="Phone: +91 8830690002"><i class="fas fa-phone"></i></a>
+            <a href="mailto:ppol@gmail.com"><i class="far fa-envelope"></i></a>
+        </div>
+        <p>&copy; 2024 Pratik Pol Photography</p>
+    </footer>
+
+
+    <script>
+        function showHome() {
+            document.getElementById('homePage').style.display = 'block';
+            document.getElementById('galleryPage').style.display = 'none';
+            document.getElementById('aboutPage').style.display = 'none';
+        }
+
+        function showGallery() {
+            document.getElementById('homePage').style.display = 'none';
+            document.getElementById('galleryPage').style.display = 'block';
+            document.getElementById('aboutPage').style.display = 'none';
+        }
+
+        function showAbout() {
+            document.getElementById('homePage').style.display = 'none';
+            document.getElementById('galleryPage').style.display = 'none';
+            document.getElementById('aboutPage').style.display = 'block';
+        }
+    </script>
+
+
+</body>
+</html>
