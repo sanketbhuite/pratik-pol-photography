@@ -6,8 +6,8 @@
     <title>Pratik Pol Photography</title>
     <meta name="description" content="Welcome to Pratik Pol Photography, a place where creativity meets professionalism, and every click tells a story.">
     <meta name="keywords" content="photography, photographer, wedding photography, portrait photography, event photography">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> <!-- Font Awesome CDN for icons -->
-    <style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+       <style>
         * {
             margin: 0;
             padding: 0;
@@ -20,7 +20,6 @@
             color: #333;
         }
 
-    
         header {
             background-color: #333;
             color: #fff;
@@ -38,7 +37,6 @@
             height: auto;
         }
 
-    
         nav {
             background-color: #444;
             text-align: center;
@@ -56,7 +54,6 @@
         nav a:hover {
             color: #ffd700;
         }
-
 
         .gallery-container {
             max-width: 1200px;
@@ -109,7 +106,6 @@
             opacity: 1;
         }
 
-      
         .about-section {
             background-color: #fff;
             padding: 40px;
@@ -131,15 +127,16 @@
             line-height: 1.6;
             color: #666;
         }
-         .about-section img{
-             width: 350px;
-             border-radius: 70%;
+
+        .about-section img {
+            width: 350px;
+            border-radius: 70%;
         }
-        .photographer-section img{
-             width: 350px;
-             border-radius: 70%;
+
+        .photographer-section img {
+            width: 350px;
+            border-radius: 70%;
         }
-    
 
         footer {
             background-color: #333;
@@ -162,44 +159,56 @@
         .contact-icons a:hover {
             color: #ffd700;
         }
-    </style>
 
+        /* Media query for responsive design */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 28px;
+            }
 
-</head>
+            .gallery-item {
+                width: calc(50% - 20px);
+            }
+
+            .about-section {
+                padding: 20px;
+            }
+
+            .about-section img,
+            .photographer-section img {
+                width: 250px;
+                border-radius: 50%;
+            }
+        }
+    </style></head>
 <body>
-    
 
 <header>
-        <img src="pc.png" alt="Logo">
-        <h1>Pratik Pol Photography</h1>
-    </header>
+    <img src="pc.png" alt="Logo">
+    <h1>Pratik Pol Photography</h1>
+</header>
 
+<nav>
+    <a href="#" onclick="showHome()">Home</a>
+    <a href="#" onclick="showGallery()">Gallery</a>
+    <a href="#" onclick="showAbout()">About Us</a>
+</nav>
 
-    <nav>
-        <a href="#" onclick="showHome()">Home</a>
-        <a href="#" onclick="showGallery()">Gallery</a>
-        <a href="#" onclick="showAbout()">About Us</a>
-    </nav>
-
-
-    <div id="homePage">
-       
-
- <div class="gallery-container">
-            <div class="gallery-item">
-                <img src="a11.jpg" alt="Photo 1">
-                <div class="gallery-description">MATERNITY SHOOT</div>
-            </div>
-            <div class="gallery-item">
-                <img src="a12.jpg" alt="Photo 2">
-                <div class="gallery-description">BRIDE SHOOT</div>
-            </div>
-            <div class="gallery-item">
-                <img src="a13.jpg" alt="Photo 3">
-                <div class="gallery-description">PREWEDDING SHOOT</div>
-            </div>
+<div id="homePage">
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="a11.jpg" alt="Photo 1">
+            <div class="gallery-description">MATERNITY SHOOT</div>
         </div>
-
+        <div class="gallery-item">
+            <img src="a12.jpg" alt="Photo 2">
+            <div class="gallery-description">BRIDE SHOOT</div>
+        </div>
+        <div class="gallery-item">
+            <img src="a13.jpg" alt="Photo 3">
+            <div class="gallery-description">PREWEDDING SHOOT</div>
+        </div>
+    </div>
 
 <div class="about-section">
             <h2>Welcome to Pratik Pol Photography</h2>
@@ -239,7 +248,6 @@ The MacBook M2 revolutionizes computing with its cutting-edge M2 chip, deliverin
         </div>
     </div>
 
-
     <div id="galleryPage" style="display: none;">
         <div class="gallery-container">
             <div class="gallery-item">
@@ -251,35 +259,35 @@ The MacBook M2 revolutionizes computing with its cutting-edge M2 chip, deliverin
             </div>
             <div class="gallery-item">
                <video controls style="width: 100%; height: 200px;">
-                <source src="video22.mp4" type="video/mp4">
+                <source src="Video22.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
                 <div class="gallery-description">Couple Shoot</div>
             </div>
             <div class="gallery-item">
                 <video controls style="width: 100%; height: 200px;">
-                <source src="video32.mp4" type="video/mp4">
+                <source src="Video32.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-                <div class="gallery-description">Home Interior shoot</div>
+                <div class="gallery-description">Pre-Wedding shoot</div>
             </div>
             <div class="gallery-item">
                 <video controls style="width: 100%; height: 200px;">
-                <source src="video112.mp4" type="video/mp4">
+                <source src="Video112.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
                 <div class="gallery-description">Engagement Shoot</div>
             </div>
             <div class="gallery-item">
                 <video controls style="width: 100%; height: 200px;">
-                <source src="video121.mp4" type="video/mp4">
+                <source src="Video121.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
                 <div class="gallery-description">Traditional Engagement shoot</div>
             </div>
             <div class="gallery-item">
                 <video controls style="width: 100%; height: 200px;">
-                <source src="video13.mp4" type="video/mp4">
+                <source src="Video13.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
                 <div class="gallery-description">Model Shoot</div>
@@ -313,61 +321,56 @@ The MacBook M2 revolutionizes computing with its cutting-edge M2 chip, deliverin
     </div>
 
 
-    <div id="aboutPage" style="display: none;">
-       
+<div id="aboutPage" style="display: none;">
+    <div class="about-section">
+        <h2>About Pratik Pol Photography</h2>
+        <p>Welcome to Pratik Pol Photography, where we believe that every moment is worth capturing and preserving. Our passion for photography drives us to create timeless images that tell stories and evoke emotions.</p>
 
- <div class="about-section">
-            <h2>About Pratik Pol Photography</h2>
-            <p>Welcome to Pratik Pol Photography, where we believe that every moment is worth capturing and preserving. Our passion for photography drives us to create timeless images that tell stories and evoke emotions.</p>
-
-
-            <div class="photographer-section"><br>
-                <h3>Meet Our Photographer: Pratik Pol</h3><br>
-                <img src="pp.jpg" alt="Pratik Pol">
-                <p>Pratik Pol is an experienced and talented photographer with a keen eye for detail and a passion for visual storytelling. With years of experience in the field, Pratik specializes in capturing life's most precious moments, from weddings and family portraits to landscapes and events.</p>
-                <p>Pratik's dedication to his craft and his commitment to excellence have earned him numerous accolades and recognition in the photography community. His unique style and artistic vision set his work apart, making every image a masterpiece.</p>
+        <div class="photographer-section">
+            <h3>Meet Our Photographer: Pratik Pol</h3><br>
+            <img src="pp.jpg" alt="Pratik Pol">
+            <p>Pratik Pol is an experienced and talented photographer with a keen eye for detail and a passion for visual storytelling. With years of experience in the field, Pratik specializes in capturing life's most precious moments, from weddings and family portraits to landscapes and events.</p>
+            <p>Pratik's dedication to his craft and his commitment to excellence have earned him numerous accolades and recognition in the photography community. His unique style and artistic vision set his work apart, making every image a masterpiece.</p>
                 <p>Whether you're planning a special event or simply want to capture the beauty of everyday life, Pratik Pol Photography is here to turn your moments into memories that will last a lifetime.</p>
-                <h4>Contact Pratik Pol:</h4>
-                <p>Email: ppol@gmail.com</p>
-                <p>Phone: +91 8830690002</p>
-                <p>Instagram: <a href="https://www.instagram.com/pratik_pol_photography" target="_blank">@pratik_pol_photography</a></p>
-                <p>YouTube: <a href="https://www.youtube.com/@pratikpolphotoghraphy6010" target="_blank">Pratik Pol Photography</a></p>
-            </div>
+            <h4>Contact Pratik Pol:</h4>
+            <p>Email: ppol@gmail.com</p>
+            <p>Phone: +91 8830690002</p>
+            <p>Instagram: <a href="https://www.instagram.com/pratik_pol_photography" target="_blank">@pratik_pol_photography</a></p>
+            <p>YouTube: <a href="https://www.youtube.com/@pratikpolphotoghraphy6010" target="_blank">Pratik Pol Photography</a></p>
         </div>
     </div>
+</div>
 
+<footer>
+    <div class="contact-icons">
+        <a href="https://www.instagram.com/pratik_pol_photography" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/@pratikpolphotoghraphy6010" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="tel:+918830690002"><i class="fas fa-phone"></i></a>
+        <a href="mailto:ppol@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+    <p>&copy; Sanket Bhuite | 2024</p>
+    <p>All rights reserved.</p>
+</footer>
 
-    <footer>
-        <div class="contact-icons">
-            <a href="https://www.instagram.com/pratik_pol_photography" target="_blank"><i class="fab fa-instagram"></i></a>
-               <a href="https://www.youtube.com/@pratikpolphotoghraphy6010" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="Phone: +91 8830690002"><i class="fas fa-phone"></i></a>
-            <a href="mailto:ppol@gmail.com"><i class="far fa-envelope"></i></a>
-        </div>
-        <p>&copy; 2024 Pratik Pol Photography</p>
-    </footer>
+<script>
+    function showHome() {
+        document.getElementById('homePage').style.display = 'block';
+        document.getElementById('galleryPage').style.display = 'none';
+        document.getElementById('aboutPage').style.display = 'none';
+    }
 
+    function showGallery() {
+        document.getElementById('homePage').style.display = 'none';
+        document.getElementById('galleryPage').style.display = 'block';
+        document.getElementById('aboutPage').style.display = 'none';
+    }
 
-    <script>
-        function showHome() {
-            document.getElementById('homePage').style.display = 'block';
-            document.getElementById('galleryPage').style.display = 'none';
-            document.getElementById('aboutPage').style.display = 'none';
-        }
-
-        function showGallery() {
-            document.getElementById('homePage').style.display = 'none';
-            document.getElementById('galleryPage').style.display = 'block';
-            document.getElementById('aboutPage').style.display = 'none';
-        }
-
-        function showAbout() {
-            document.getElementById('homePage').style.display = 'none';
-            document.getElementById('galleryPage').style.display = 'none';
-            document.getElementById('aboutPage').style.display = 'block';
-        }
-    </script>
-
+    function showAbout() {
+        document.getElementById('homePage').style.display = 'none';
+        document.getElementById('galleryPage').style.display = 'none';
+        document.getElementById('aboutPage').style.display = 'block';
+    }
+</script>
 
 </body>
 </html>
